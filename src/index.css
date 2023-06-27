@@ -29,6 +29,11 @@ body {
 	background-color: var(--second-bg-color);
 }
 
+main {
+	min-height: 100vh;
+	padding: 10rem 9% 2rem;
+}
+
 /* Navbar Section */
 
 .header {
@@ -75,11 +80,6 @@ body {
 /* Navbar Section End */
 
 /* Home Section */
-
-main {
-	min-height: 100vh;
-	padding: 10rem 9% 2rem;
-}
 
 .home {
 	display: flex;
@@ -272,13 +272,40 @@ main {
 
 /* Skills Section */
 
+.skills {
+	padding: 2rem 9% 7rem;
+	min-height: auto;
+	background: var(--second-bg-color);
+}
+
 .skills_heading {
 	font-size: 5rem;
 	line-height: 1;
+	color: var(--text-color);
 	text-align: center;
+	padding: 4rem 0 4rem 0;
 }
 
 .skills_heading > span {
+	color: var(--main-color);
+}
+
+.skills > .skills_row {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 5rem;
+}
+
+.skills_row > .skills_column {
+	flex: 1 1 40rem;
+}
+
+.skills_column > .title {
+	font-size: 2.5rem;
+	margin: 0 0 1.5rem;
+}
+
+.progress > h3 > span {
 	color: var(--main-color);
 }
 
