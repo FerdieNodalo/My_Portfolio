@@ -5,24 +5,28 @@ const Home = () => {
 				<h1>
 					Hi, I'm <span>Ferdie Nodalo</span>
 				</h1>
+
 				<div className='text_animate'>
-					<h3>Full Stack Developer</h3>
+					<h3>Full-Stack Web Developer</h3>
 				</div>
+
 				<p>
-					Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni eius
-					ratione ipsam quasi quia, quisquam, rerum et illo provident blanditiis
-					recusandae? Nesciunt tempora velit placeat ipsum dolores?
+					I'm a proud graduate of KodeGo, an esteemed online coding bootcamp
+					renowned for providing a strong foundation in programming. With a
+					passion for technology and a commitment to excellence, I have
+					developed a solid skill set that enables me to tackle complex
+					challenges and create innovative solutions.
 				</p>
 				<div className='btn_box'>
 					<button href='#' className='btn'>
 						Hire me
 					</button>
 					<button href='#' className='btn'>
-						Lets talk
+						Download CV
 					</button>
 				</div>
 
-				<div className='home_sci'>
+				<div className='social_media-icons'>
 					<a href='#'>
 						<i className='bx bxl-facebook'></i>
 					</a>
@@ -33,6 +37,8 @@ const Home = () => {
 						<i class='bx bxl-gmail'></i>
 					</a>
 				</div>
+
+				<div className='home_img-hover'></div>
 			</section>
 		</main>
 	);

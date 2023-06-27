@@ -6,6 +6,7 @@
 	box-sizing: border-box;
 	text-decoration: none;
 	font-family: 'Poppins', sans-serif;
+	scroll-behavior: smooth;
 }
 
 :root {
@@ -86,7 +87,7 @@ main {
 	padding: 0 9%;
 	background: url('./assets/image/background_img.png') no-repeat;
 	background-size: cover;
-	background-position: 350px -550px;
+	background-position: 350px -580px;
 }
 
 .home_content {
@@ -101,7 +102,7 @@ main {
 
 .home_content .text_animate {
 	position: relative;
-	width: 34rem;
+	width: 45rem;
 }
 
 .home_content .text_animate h3 {
@@ -176,49 +177,109 @@ main {
 	width: 100%;
 }
 
-.home_sci {
+.social_media-icons {
 	position: absolute;
-	bottom: 4rem;
+	bottom: 6rem;
 	width: 170px;
 	display: flex;
 	justify-content: space-between;
 }
 
-.home_sci > a {
+.social_media-icons > a {
 	position: relative;
 	display: inline-flex;
 	justify-content: center;
 	align-items: center;
-	width: 40px;
-	height: 40px;
+	width: 4rem;
+	height: 4rem;
 	background: transparent;
 	border: 0.2rem solid var(--main-color);
 	border-radius: 50%;
-	font-size: 20px;
+	font-size: 2rem;
 	color: var(--main-color);
 	z-index: 1;
 	overflow: hidden;
-	transition: 0.5s;
+	transition: 0.5s ease;
 }
 
-.home_sci > a:hover {
+.social_media-icons > a:hover {
+	background: var(--main-color);
 	color: var(--second-bg-color);
+	box-shadow: 0 0 1rem var(--main-color);
 }
 
-.home_sci > a::before {
-	content: '';
+.home_img-hover {
 	position: absolute;
 	top: 0;
-	left: 0;
-	width: 0;
+	right: 0;
+	width: 43%;
 	height: 100%;
-	background: var(--main-color);
-	z-index: -1;
-	transition: 0.5s;
+	background: transparent;
+	transition: 2s;
 }
 
-.home_sci > a:hover::before {
-	width: 100%;
+.home_img-hover:hover {
+	background: var(--second-bg-color);
+	opacity: 0.6;
 }
 
 /* Home Section End */
+
+/* About Section */
+
+.about {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	gap: 1.5rem;
+}
+
+.about_img > img {
+	max-width: 530px;
+	height: auto;
+	width: 100%;
+	border-radius: 5px;
+}
+
+.about_text {
+	width: 40%;
+}
+
+.about_text > h2 {
+	font-size: 5rem;
+	line-height: 1;
+}
+
+.about_text > h2 > span {
+	color: var(--main-color);
+}
+
+.about_text > h4 {
+	font-size: 3rem;
+	font-weight: 600;
+	line-height: 1.7;
+	margin: 15px 0 30px;
+}
+
+.about_text > p {
+	font-size: 1.5rem;
+	line-height: 1.8;
+	margin-bottom: 4rem;
+}
+
+/* About Section End */
+
+/* Skills Section */
+
+.skills_heading {
+	font-size: 5rem;
+	line-height: 1;
+	text-align: center;
+}
+
+.skills_heading > span {
+	color: var(--main-color);
+}
+
+/* Skills Section End */
