@@ -4,7 +4,6 @@ const Skills = () => {
 			<h2 className='skills_heading'>
 				My <span>Skills</span>
 			</h2>
-
 			<div className='skills_row'>
 				<div className='skills_column'>
 					<h3 className='title'>
@@ -38,7 +37,7 @@ const Skills = () => {
 							</div>
 							<div className='progress'>
 								<h3>
-									JavaScript <span>80%</span>
+									JavaScript <span>75%</span>
 								</h3>
 								<div className='bar'>
 									<span></span>
@@ -46,7 +45,7 @@ const Skills = () => {
 							</div>
 							<div className='progress'>
 								<h3>
-									M.E.R.N <span>80%</span>
+									M.E.R.N <span>75%</span>
 								</h3>
 								<div className='bar'>
 									<span></span>
@@ -71,7 +70,7 @@ const Skills = () => {
 							</div>
 							<div className='progress'>
 								<h3>
-									Web Development <span>80%</span>
+									Web Development <span>75%</span>
 								</h3>
 								<div className='bar'>
 									<span></span>

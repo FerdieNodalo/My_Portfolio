@@ -27,14 +27,14 @@ const Home = () => {
 				</div>
 
 				<div className='social_media-icons'>
-					<a href='#'>
+					<a href='https://www.facebook.com/kafrederick.nodalo/'>
 						<i className='bx bxl-facebook'></i>
 					</a>
-					<a href='#'>
-						<i class='bx bxl-linkedin-square'></i>
+					<a href='https://www.linkedin.com/in/ferdie-nodalo-38a092270/'>
+						<i className='bx bxl-linkedin-square'></i>
 					</a>
-					<a href='#'>
-						<i class='bx bxl-gmail'></i>
+					<a href='https://github.com/FerdieNodalo?tab=repositories'>
+						<i className='bx bxl-github'></i>
 					</a>
 				</div>
 

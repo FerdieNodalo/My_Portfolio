@@ -2,7 +2,27 @@ const About = () => {
 	return (
 		<section className='about' id='about'>
 			<div className='about_img'>
-				<img src={require('../assets/image/about_img.png')} alt='my-image' />
+				<img src={require('../assets/image/about_img.png')} alt='my-pic' />
+				<div className='about_info-layer'>
+					<p>
+						Name: <span>Ferdie Nodalo</span>
+					</p>
+					<p>
+						Age: <span>21</span>
+					</p>
+					<p>
+						Status: <span>Married</span>
+					</p>
+					<p>
+						Birthday: <span>July 05, 2001</span>
+					</p>
+					<p>
+						Address: <span>Ipil, Zamboanga Sibugay</span>
+					</p>
+					<p>
+						Zodiac-Sign: <span>Cancer</span>
+					</p>
+				</div>
 			</div>
 
 			<div className='about_text'>
