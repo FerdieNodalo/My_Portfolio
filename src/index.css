@@ -7,6 +7,7 @@
 	text-decoration: none;
 	font-family: 'Poppins', sans-serif;
 	scroll-behavior: smooth;
+	list-style: none;
 }
 
 :root {
@@ -47,6 +48,11 @@ main {
 	justify-content: space-between;
 	align-items: center;
 	z-index: 100;
+	transition: 0.3s;
+}
+
+.header.active {
+	background: var(--second-bg-color);
 }
 
 .logo {
@@ -85,9 +91,9 @@ main {
 	display: flex;
 	align-items: center;
 	padding: 0 9%;
-	background: url('./assets/image/background_img.png') no-repeat;
+	background: url('./assets/image/home.jpg') no-repeat;
 	background-size: cover;
-	background-position: 350px -580px;
+	background-position: center;
 }
 
 .home_content {
@@ -130,7 +136,7 @@ main {
 	display: inline-flex;
 	justify-content: center;
 	align-items: center;
-	width: 15rem;
+	width: 15.5rem;
 	height: 100%;
 	background: var(--main-color);
 	border: 0.2rem solid var(--main-color);
@@ -223,6 +229,89 @@ main {
 	opacity: 0.6;
 }
 
+@media (max-width: 1200px) {
+	html {
+		font-size: 55%;
+	}
+}
+
+@media (max-width: 991px) {
+	.header {
+		padding: 2rem 4%;
+	}
+
+	html {
+		font-size: 55%;
+	}
+
+	section {
+		padding: 0rem 4% 5rem;
+	}
+
+	.home {
+		padding: 0 4%;
+		background-position: top 10%;
+	}
+
+	.footer {
+		padding: 2rem 4%;
+	}
+}
+
+@media (max-width: 768px) {
+	.header {
+		background: var(--second-bg-color);
+	}
+
+	#menu-icon {
+		display: block;
+	}
+
+	/* .navbar {
+		position: absolute;
+		top: 100%;
+		left: 0;
+		width: 100%;
+		padding: 1rem 4%;
+		background-color: var(--fourth-bg-color);
+		box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+	} */
+
+	/* .navbar > a {
+		display: block;
+		font-size: 2rem;
+		margin: 3rem 0;
+	} */
+
+	.home_img-hover {
+		pointer-events: none;
+	}
+}
+
+@media (max-width: 520px) {
+	html {
+		font-size: 40%;
+	}
+}
+
+@media (max-width: 425px) {
+	html {
+		font-size: 29%;
+	}
+}
+
+@media (max-width: 375px) {
+	html {
+		font-size: 25%;
+	}
+}
+
+@media (max-width: 320px) {
+	html {
+		font-size: 17%;
+	}
+}
+
 /* Home Section End */
 
 /* About Section */
@@ -232,7 +321,7 @@ main {
 	flex-direction: row;
 	justify-content: center;
 	align-items: center;
-	gap: 1.5rem;
+	gap: 1rem;
 	height: 100vh;
 	background: var(--bg-color);
 }
@@ -243,7 +332,7 @@ main {
 }
 
 .about_img > img {
-	max-width: 530px;
+	padding-top: 2rem;
 	height: 100%;
 	width: 100%;
 	border-radius: 0.6rem;
@@ -259,7 +348,7 @@ main {
 	left: 0;
 	width: 100%;
 	height: 0;
-	background: linear-gradient(rgba(0, 0, 0, 0.1), var(--third-bg-color));
+	background: linear-gradient(rgba(0, 0, 0, 0.1), var(--bg-color));
 	overflow: hidden;
 	transition: 0.5s;
 }
@@ -284,6 +373,7 @@ main {
 
 .about_text {
 	width: 40%;
+	padding-top: 2rem;
 }
 
 .about_text > h2 {
@@ -299,7 +389,7 @@ main {
 	font-size: 3rem;
 	font-weight: 600;
 	line-height: 1.7;
-	margin: 15px 0 30px;
+	margin: 15px 0 20px;
 }
 
 .about_text > p {
@@ -543,3 +633,135 @@ main {
 }
 
 /* Projects Section End*/
+
+/* Contact Section */
+
+.contact {
+	padding: 10rem 9% 2rem;
+	min-height: 100vh;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	align-items: center;
+	gap: 2.5rem;
+}
+
+.contact_text > h2 {
+	font-size: 5rem;
+	line-height: 1;
+}
+
+.contact_text > h2 > span {
+	color: var(--main-color);
+}
+
+.contact_text > h4 {
+	margin: 18px 0;
+	font-size: 20px;
+	font-weight: 600;
+}
+
+.contact_text > p {
+	font-size: 1.1rem;
+	line-height: 1.8rem;
+	margin-bottom: 30px;
+}
+
+.contact_list {
+	margin-bottom: 2.8rem;
+}
+
+.contact_list > li {
+	margin-bottom: 12px;
+}
+
+.contact_list > li > a {
+	display: block;
+	color: var(--main-color);
+	font-size: 14px;
+	transition: all 0.45s ease;
+}
+
+.contact_list > li > a:hover {
+	color: var(--text-color);
+	transform: translateY(5px);
+}
+
+.contact_icons > a > i {
+	height: 45px;
+	width: 45px;
+	color: var(--text-color);
+	font-size: 22px;
+	display: inline-block;
+	align-items: center;
+	justify-content: center;
+	border-radius: 8px;
+	margin-right: 15px;
+	transition: all 0.45s ease;
+}
+
+.contact_icons > a > i:hover {
+	transform: scale(1.2);
+	color: var(--main-color);
+}
+
+.contact_form > form {
+	position: relative;
+}
+
+.contact_form > form > input,
+form > textarea {
+	width: 100%;
+	padding: 14px;
+	background: var(--bg-color);
+	color: var(--text-color);
+	border: none;
+	outline: none;
+	font-size: 15px;
+	border-radius: 8px;
+	margin-bottom: 10px;
+}
+
+.contact_form > textarea {
+	resize: none;
+	height: 240px;
+}
+
+.contact_btn {
+	display: inline-block;
+	font-size: 16px;
+	padding: 10px;
+	border-radius: 8px;
+	border: none;
+	background: var(--main-color);
+	color: var(--text-color);
+	width: 160px;
+	transition: all 0.45s ease;
+}
+
+/* Contact Section End*/
+
+/* Footer Section */
+
+footer {
+	padding: 10px 10%;
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-between;
+	gap: 2rem;
+	background: var(--bg-color);
+}
+
+.last_text > p {
+	font-size: 1.2rem;
+}
+
+.arrow_top > a > i {
+	border-radius: 8px;
+	font-size: 30px;
+	color: var(--text-color);
+	background: var(--main-color);
+}
+
+/* Footer Section End*/

@@ -17,6 +17,7 @@ const Home = () => {
 					developed a solid skill set that enables me to tackle complex
 					challenges and create innovative solutions.
 				</p>
+
 				<div className='btn_box'>
 					<button href='#' className='btn'>
 						Hire me

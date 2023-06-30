@@ -1,7 +1,21 @@
+import { useState } from 'react';
+
 const Navbar = () => {
+	const [scroll, setScroll] = useState(false);
+
+	const changeNavbarBackground = () => {
+		if (window.scrollY) {
+			setScroll(true);
+		} else {
+			setScroll(false);
+		}
+	};
+
+	window.addEventListener('scroll', changeNavbarBackground);
+
 	return (
-		<header className='header'>
-			<a href='#' className='logo'>
+		<header className={scroll ? 'header active' : 'header'}>
+			<a href='#home' className='logo'>
 				Fer-<span>Dev</span>.
 			</a>
 
