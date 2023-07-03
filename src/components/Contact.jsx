@@ -1,4 +1,30 @@
+import { useRef } from 'react';
+import emailjs from '@emailjs/browser';
+
 const Contact = () => {
+	const form = useRef();
+
+	const sendEmail = (e) => {
+		e.preventDefault();
+
+		emailjs
+			.sendForm(
+				'service_wefxwwp',
+				'template_p3m5yyg',
+				form.current,
+				'8oTGmqU7yBm3THduf'
+			)
+			.then(
+				(result) => {
+					console.log(result.text);
+				},
+				(error) => {
+					console.log(error.text);
+				}
+			);
+
+		e.target.reset();
+	};
 	return (
 		<section className='contact' id='contact'>
 			<div className='contact_text'>
@@ -39,18 +65,30 @@ const Contact = () => {
 				</div>
 			</div>
 			<div className='contact_form'>
-				<form action='contact'>
-					<input type='text' placeholder='Enter your name' required />
-					<input type='email' placeholder='Enter your email' required />
+				<form ref={form} onSubmit={sendEmail} action='contact'>
+					<input
+						type='text'
+						name='user_name'
+						placeholder='Enter your name'
+						required
+					/>
+					<input
+						type='email'
+						name='user_email'
+						placeholder='Enter your email'
+						required
+					/>
 					<input
 						type='number'
+						name='user_number'
 						placeholder='Enter your mobile number'
 						required
 					/>
 					<textarea
 						cols='35'
 						rows='10'
-						placeholder='Enter your comment here.'
+						name='message'
+						placeholder='Enter your message here.'
 						required
 					></textarea>
 					<div className='btn_box'>

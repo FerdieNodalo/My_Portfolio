@@ -11,11 +11,10 @@ const Home = () => {
 				</div>
 
 				<p>
-					I'm a proud graduate of KodeGo, an esteemed online coding bootcamp
-					renowned for providing a strong foundation in programming. With a
-					passion for technology and a commitment to excellence, I have
-					developed a solid skill set that enables me to tackle complex
-					challenges and create innovative solutions.
+					I'm a recent graduate from KodeGo bootcamp with a passion for building
+					websites. I love coding and take a professional approach to my work. I
+					am dedicated to expanding my skills and knowledge to grow as a web
+					developer in this dynamic field.
 				</p>
 
 				<div className='btn_box'>
@@ -23,7 +22,7 @@ const Home = () => {
 						Hire me
 					</button>
 					<a
-						href='https://doc-0g-bc-prod-03-apps-viewer.googleusercontent.com/viewer2/prod-03/pdf/e72pva9hd04dme3r50btk235krjs4260/p8nl3u4hm8his8eefsuirpqaa4uks6ro/1688378850000/3/113735566463961790360/APznzaYFMljmvjJ83OAOx7CuzGq_LB6UHDKGO8DcddxEWS2l_qvig0EbQWGdMCo4MLjJObRHPtWfX8_sAlMjpLZqEADXk0dft29bImo4qU468VOgUZdPyLuMerR6bWO-kW4lQxRaCUGUZISx9D3C25GO9nHFJlTaBTD3k3znnbL5NPh0Vn_IlXJCT49-Hp8CvmgjdrWbFFc76h1ib4A391IJbTmYT6OAw21piCGBGTDjnsDDrvr13SdfaIuOcISDQuNbHJIsUcfbNzjmWhbJoCzSxWnW5gpY_RWdYK9V8hCxm-ifxPl-5hhVFB-tSfLztuKKUjdw9n8Ib1wXOHW6LcsowhflPKaFuQyZ_hNvIGZwzgK2vv-xTS3UefQKZKUsTF6a9rTVV-IXCRT9DaD98pdaWdJjogjPDw==?authuser=0&nonce=4a3hn8io7o9cu&user=113735566463961790360&hash=urt2i7mqomfrkdjruk2onpcd4phqlmhd'
+						href='https://drive.google.com/file/d/1sdPPeKjDIc-EOkxm1270IlYuKctmA2nc/view?usp=sharing'
 						className='btn'
 					>
 						Download CV
