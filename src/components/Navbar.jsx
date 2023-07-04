@@ -2,6 +2,18 @@ import { useState } from 'react';
 
 const Navbar = () => {
 	const [scroll, setScroll] = useState(false);
+	const [navActive, setNavActive] = useState('navbar');
+	const [toggleIcon, setToggleIcon] = useState('nav_toggler');
+
+	const navToggle = () => {
+		navActive === 'navbar'
+			? setNavActive('navbar navbar_active')
+			: setNavActive('navbar');
+
+		toggleIcon === 'nav_toggler'
+			? setToggleIcon('nav_toggler toggle')
+			: setToggleIcon('nav_toggler');
+	};
 
 	const changeNavbarBackground = () => {
 		if (window.scrollY) {
@@ -19,8 +31,13 @@ const Navbar = () => {
 				Fer-<span>Dev</span>.
 			</a>
 
-			<div className='bx bx-menu' id='menu-icon'></div>
-			<nav className='navbar'>
+			<div onClick={navToggle} className={toggleIcon}>
+				<div className='line1'></div>
+				<div className='line2'></div>
+				<div className='line3'></div>
+			</div>
+
+			<nav className={navActive}>
 				<a href='#home'>Home</a>
 				<a href='#about'>About</a>
 				<a href='#skills'>Skills</a>

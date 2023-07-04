@@ -11,21 +11,21 @@ const Home = () => {
 				</div>
 
 				<p>
-					I'm a recent graduate from KodeGo bootcamp with a passion for building
+					A recent graduate from KodeGo bootcamp with a passion for building
 					websites. I love coding and take a professional approach to my work. I
 					am dedicated to expanding my skills and knowledge to grow as a web
 					developer in this dynamic field.
 				</p>
 
 				<div className='btn_box'>
-					<button href='#' className='btn'>
-						Hire me
-					</button>
+					<a href='#contact' className='btn'>
+						Contact Me
+					</a>
 					<a
-						href='https://drive.google.com/file/d/1sdPPeKjDIc-EOkxm1270IlYuKctmA2nc/view?usp=sharing'
+						href='https://drive.google.com/file/d/16yJJ0Z4TmJxiOvXQphlBJ4hgfJ5fIu7z/view?usp=sharing'
 						className='btn'
 					>
-						Download CV
+						Resume
 					</a>
 				</div>
 
