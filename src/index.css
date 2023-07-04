@@ -109,16 +109,35 @@ main {
 	line-height: 1.3;
 }
 
-.home_content .text_animate {
+.home_content > .text_animate {
 	position: relative;
-	width: 45rem;
+	width: 43rem;
 }
 
-.home_content .text_animate h3 {
+.home_content > .text_animate > h3 {
 	font-size: 3.2rem;
 	font-weight: 700;
 	color: transparent;
 	-webkit-text-stroke: 0.7px var(--main-color);
+	background-image: linear-gradient(var(--main-color), var(--main-color));
+	background-repeat: no-repeat;
+	-webkit-background-clip: text;
+	background-position: -45rem 0;
+	animation: HomeBgText 6s linear infinite;
+	animation-delay: 2s;
+}
+
+.home_content > .text_animate > h3::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 0;
+	height: 100%;
+	border-right: 2px solid var(--main-color);
+	z-index: 1;
+	animation: HomeCursorText 6s linear infinite;
+	animation-delay: 2s;
 }
 
 .home_content > p {
@@ -241,7 +260,6 @@ main {
 	flex-direction: row;
 	justify-content: center;
 	align-items: center;
-	gap: 1rem;
 	height: 100vh;
 	background: var(--bg-color);
 }
@@ -249,6 +267,7 @@ main {
 .about_img {
 	position: relative;
 	height: 100%;
+	padding-right: 1rem;
 }
 
 .about_img > img {
@@ -694,6 +713,26 @@ footer {
 	}
 }
 
+@media (max-width: 1024px) {
+	.projects_layer > h4 {
+		font-size: 2.5rem;
+	}
+
+	.projects_layer > p {
+		font-size: 1.5rem;
+		margin: 0.3rem 0 1rem;
+	}
+
+	.projects_layer > a {
+		width: 4rem;
+		height: 4rem;
+	}
+
+	.projects_layer > a > i {
+		font-size: 2rem;
+	}
+}
+
 @media (max-width: 991px) {
 	.header {
 		padding: 2rem 4%;
@@ -714,6 +753,16 @@ footer {
 
 	.footer {
 		padding: 2rem 4%;
+	}
+}
+
+@media (max-width: 900px) and (min-width: 769px) {
+	.about {
+		height: inherit;
+	}
+
+	.about_text {
+		width: 40%;
 	}
 }
 
@@ -765,6 +814,202 @@ footer {
 	.home_img-hover {
 		pointer-events: none;
 	}
+
+	.about {
+		height: inherit;
+	}
+
+	.skills {
+		height: inherit;
+	}
+
+	.projects_container {
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
+
+@media (max-width: 650px) {
+	html {
+		font-size: 40%;
+	}
+
+	section {
+		padding: 0;
+	}
+	.about {
+		display: flex;
+		flex-direction: row;
+	}
+	.about_img {
+		gap: none;
+		padding: none;
+		width: 50%;
+		height: 80%;
+	}
+
+	.about_img > img {
+		width: 100%;
+	}
+
+	.about_img > .about_info-layer {
+		width: 100%;
+	}
+
+	.about_img:hover > .about_info-layer {
+		width: 100%;
+	}
+
+	.about_text {
+		width: 50%;
+	}
+}
+
+@media (max-width: 480px) {
+	html {
+		font-size: 35%;
+	}
+
+	.projects_container {
+		grid-template-columns: repeat(1, 1fr);
+	}
+
+	.projects_layer > h4 {
+		font-size: 4rem;
+	}
+
+	.projects_layer > p {
+		font-size: 2rem;
+	}
+
+	.projects_layer > a {
+		width: 7rem;
+		height: 7rem;
+	}
+
+	.projects_layer > a > i {
+		font-size: 3.5rem;
+	}
+}
+
+@media (max-width: 425px) {
+	.home {
+		background: var(--second-bg-color);
+	}
+
+	.social_media-icons > a {
+		width: 6rem;
+		height: 6rem;
+		font-size: 3rem;
+		color: var(--main-color);
+	}
+
+	.social_media-icons {
+		position: absolute;
+		left: 0;
+		bottom: 20rem;
+		width: 170px;
+		justify-content: space-evenly;
+	}
+
+	.about {
+		padding-bottom: 2rem;
+		height: 100vh;
+	}
+
+	.contact {
+		display: grid;
+		grid-template-columns: repeat(1, 1fr);
+	}
+
+	.contact_text > p {
+		font-size: 1.5rem;
+	}
+
+	.last_text > p {
+		font-size: 1.5rem;
+	}
+}
+
+@media (max-width: 375px) {
+	html {
+		font-size: 34%;
+	}
+
+	.about {
+		display: flex;
+		flex-direction: column;
+
+		height: inherit;
+	}
+
+	.about_img {
+		width: 75%;
+	}
+
+	.about_text {
+		width: 100%;
+		padding-bottom: 2rem;
+		text-align: center;
+	}
+
+	.btn_box > #about-btn {
+		margin-left: 20rem;
+	}
+}
+
+@media (max-width: 320px) {
+	html {
+		font-size: 29%;
+	}
+
+	.social_media-icons > a {
+		width: 6rem;
+		height: 6rem;
+		font-size: 3rem;
+		color: var(--main-color);
+	}
+
+	.social_media-icons {
+		position: absolute;
+		left: 0;
+		bottom: 30rem;
+		width: 170px;
+		justify-content: space-evenly;
+	}
 }
 
 /* Responsive Section End */
+
+/* KEYFRAMES Animation Section */
+@keyframes HomeBgText {
+	0%,
+	10%,
+	100% {
+		background-position: -45rem 0;
+	}
+	65%,
+	85% {
+		background-position: 0 0;
+	}
+}
+
+@keyframes HomeCursorText {
+	0%,
+	10%,
+	100% {
+		width: 0;
+	}
+	65%,
+	78%,
+	85% {
+		width: 100%;
+		opacity: 1;
+	}
+
+	75%,
+	81% {
+		opacity: 0;
+	}
+}
+
+/* KEYFRAMES Animation Section End*/

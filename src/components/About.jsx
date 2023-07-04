@@ -41,7 +41,13 @@ const About = () => {
 					opportunities for personal and professional development.
 				</p>
 				<div className='btn_box'>
-					<button className='btn'>More About</button>
+					<a
+						href='https://www.facebook.com/kafrederick.nodalo/about'
+						className='btn'
+						id='about-btn'
+					>
+						More About
+					</a>
 				</div>
 			</div>
 		</section>
