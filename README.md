@@ -1,70 +1,47 @@
-# Getting Started with Create React App
+Ferdie Nodalo's Portfolio
+Ferdie Nodalo's Portfolio
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Introduction
+Welcome to my GitHub repository! This is where I showcase my portfolio as a Full-Stack Web Developer. I am Ferdie Nodalo, a graduate of the KodeGo Bootcamp, and I am passionate about building dynamic and user-friendly web applications.
 
-## Available Scripts
+About Me
+I am a dedicated and enthusiastic developer with a strong foundation in both front-end and back-end technologies. My journey into web development began with my curiosity about how websites work and my desire to create digital experiences that are both visually appealing and functional. I enjoy collaborating with others and continuously learning new skills to improve my craft.
 
-In the project directory, you can run:
+Portfolio Website
+Ferdie Nodalo's Portfolio Website
 
-### `npm start`
+My portfolio website serves as a hub for my projects, skills, and experiences as a web developer. You can find a diverse range of projects that I've worked on, highlighting my proficiency in various technologies and my ability to tackle different challenges.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Projects
+Here are some of the projects featured in my portfolio:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Project One
 
-### `npm test`
+Description: A full-stack web application that allows users to manage their tasks and to-do lists efficiently.
+Technologies: React, Node.js, MongoDB, Express, Redux.
+Repository: Project One Repository
+Project Two
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Description: An e-commerce platform with a responsive design, providing a seamless shopping experience for users.
+Technologies: HTML, CSS, JavaScript, Node.js, Express, MongoDB.
+Repository: Project Two Repository
+Project Three
 
-### `npm run build`
+Description: A blog website where users can read and create engaging articles on various topics.
+Technologies: React, Django, PostgreSQL, REST API.
+Repository: Project Three Repository
+Skills
+JavaScript
+HTML/CSS
+React
+Node.js
+Express
+MongoDB
+Redux
+Django
+REST API
+Version Control (Git)
+Get in Touch
+I am open to collaborations, job opportunities, and feedback on my projects. If you'd like to get in touch, feel free to reach out to me via email at ferdie.nodalo@example.com or connect with me on LinkedIn.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Thank you for visiting my portfolio repository. I look forward to sharing more exciting projects and growing as a developer. Happy coding! 😊
