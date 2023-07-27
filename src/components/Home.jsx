@@ -22,7 +22,7 @@ const Home = () => {
 						Contact Me
 					</a>
 					<a
-						href='https://drive.google.com/file/d/16yJJ0Z4TmJxiOvXQphlBJ4hgfJ5fIu7z/view?usp=sharing'
+						href='https://drive.google.com/file/d/1hlg-_-9VuBwzB4f3YtGkshuYfkRc0KqX/view?usp=sharing'
 						className='btn'
 					>
 						Resume
