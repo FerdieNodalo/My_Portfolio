@@ -1,5 +1,4 @@
-Ferdie Nodalo's Portfolio
-Ferdie Nodalo's Portfolio
+# Ferdie Nodalo's Portfolio
 
 Introduction
 Welcome to my GitHub repository! This is where I showcase my portfolio as a Full-Stack Web Developer. I am Ferdie Nodalo, a graduate of the KodeGo Bootcamp, and I am passionate about building dynamic and user-friendly web applications.
