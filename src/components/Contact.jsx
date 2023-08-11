@@ -31,38 +31,43 @@ const Contact = () => {
 				<h2>
 					Contact <span>Me</span>
 				</h2>
-				<h4>If you want to have an interview with me.</h4>
 				<p>
-					I'm a web developer - crafting powerful and dynamic websites and web
-					applications for clients worldwide.
+					I'm always open to opportunities and finding ways to improve myself.
+					If you think I can provide any value for you in any way, you can also
+					find me on the following sites.
 				</p>
 
-				<div className='contact_list'>
+				<ul>
 					<li>
-						<a href='my-number'>0956 - 227 - 4182</a>
-					</li>
-					<li>
-						<a href='https://www.google.com/gmail/about/'>
-							ferdienodalo7@gmail.com
-						</a>
-					</li>
-					<li>
-						<a href='https://www.facebook.com/kafrederick.nodalo/'>
-							Ferdie Nodalo
-						</a>
-					</li>
-				</div>
-				<div className='contact_icons'>
-					<a href='https://www.facebook.com/kafrederick.nodalo/'>
-						<i className='bx bxl-facebook-square'></i>
-					</a>
-					<a href='https://www.linkedin.com/in/ferdie-nodalo-38a092270/'>
-						<i className='bx bxl-linkedin-square'></i>
-					</a>
-					<a href='https://github.com/FerdieNodalo'>
 						<i className='bx bxl-github'></i>
-					</a>
-				</div>
+						<a href='https://github.com/FerdieNodalo'>Github</a>
+					</li>
+					<li>
+						<i className='bx bxl-linkedin-square'></i>
+						<a href='https://www.linkedin.com/in/ferdie-nodalo-38a092270/'>
+							LinkedIn
+						</a>
+					</li>
+					<li>
+						<span className='frontend_mentor-logo'>
+							<svg
+								width='24'
+								height='24'
+								xmlns='http://www.w3.org/2000/svg'
+								class=''
+							>
+								<path d='M12.17 1.272a.732.732 0 0 0-.718.732v13.914a.732.732 0 0 0 .732.732.732.732 0 0 0 .732-.732V2.004a.732.732 0 0 0-.745-.732zM23.246 5.44a.734.734 0 0 0-.277.063l-6.282 2.804a.733.733 0 0 0 0 1.336l6.282 2.813a.738.738 0 0 0 .3.065.732.732 0 0 0 .297-1.4L18.78 8.976l4.786-2.137a.734.734 0 0 0 .37-.966.734.734 0 0 0-.69-.433zm-22.5 5.032a.732.732 0 0 0-.722.915c1.736 6.677 7.775 11.341 14.683 11.341a.732.732 0 0 0 0-1.464A13.706 13.706 0 0 1 1.44 11.02a.732.732 0 0 0-.694-.547z'></path>
+							</svg>
+						</span>
+						<a href='https://www.frontendmentor.io/profile/FerdieNodalo'>
+							Frontend Mentor
+						</a>
+					</li>
+					<li>
+						<i className='bx bxl-facebook-circle'></i>
+						<a href='https://www.facebook.com/kafrederick.nodalo/'>Facebook</a>
+					</li>
+				</ul>
 			</div>
 			<div className='contact_form'>
 				<form ref={form} onSubmit={sendEmail} action='contact'>
@@ -78,12 +83,6 @@ const Contact = () => {
 						placeholder='Enter your email'
 						required
 					/>
-					<input
-						type='number'
-						name='user_number'
-						placeholder='Enter your mobile number'
-						required
-					/>
 					<textarea
 						cols='35'
 						rows='10'
@@ -92,7 +91,7 @@ const Contact = () => {
 						required
 					></textarea>
 					<div className='btn_box'>
-						<button type='submit' className='btn'>
+						<button type='submit' className='contact_btn'>
 							Send Message
 						</button>
 					</div>

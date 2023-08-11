@@ -27,7 +27,10 @@ const Navbar = () => {
 
 	return (
 		<header className={scroll ? 'header active' : 'header'}>
-			<a href='#home' className='logo'>
+			<a
+				href='https://www.linkedin.com/in/ferdie-nodalo-38a092270/'
+				className='logo'
+			>
 				Fer-<span>Dev</span>.
 			</a>
 
@@ -43,7 +46,20 @@ const Navbar = () => {
 				<a href='#skills'>Skills</a>
 				<a href='#projects'>Projects</a>
 				<a href='#contact'>Contact</a>
+				<a
+					href='https://drive.google.com/file/d/1hlg-_-9VuBwzB4f3YtGkshuYfkRc0KqX/view?usp=sharing'
+					className='resume_btn hidden'
+				>
+					Download Resume
+				</a>
 			</nav>
+
+			<a
+				href='https://drive.google.com/file/d/1hlg-_-9VuBwzB4f3YtGkshuYfkRc0KqX/view?usp=sharing'
+				className='resume_btn'
+			>
+				Download Resume
+			</a>
 		</header>
 	);
 };
