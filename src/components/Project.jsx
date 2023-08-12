@@ -22,14 +22,16 @@ const Project = () => {
 						</p>
 						<ul className='technologies_used'>
 							<li>
-								<i className='bx bxl-react'></i> ReactJS
-							</li>
-							<li>ExpressJS</li>
-							<li>
-								<i className='bx bxl-nodejs'></i> NodeJS
+								<i className='bx bxl-react'></i> <span>ReactJS</span>
 							</li>
 							<li>
-								<i className='bx bxl-mongodb'></i> MongoDB
+								<span>ExpressJS</span>
+							</li>
+							<li>
+								<i className='bx bxl-nodejs'></i> <span>NodeJS</span>
+							</li>
+							<li>
+								<i className='bx bxl-mongodb'></i> <span>MongoDB</span>
 							</li>
 						</ul>
 					</div>

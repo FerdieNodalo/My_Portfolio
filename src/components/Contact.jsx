@@ -90,7 +90,7 @@ const Contact = () => {
 						placeholder='Enter your message here.'
 						required
 					></textarea>
-					<div className='btn_box'>
+					<div className='contact_btn-box'>
 						<button type='submit' className='contact_btn'>
 							Send Message
 						</button>
