@@ -445,10 +445,11 @@ body {
 	overflow: hidden;
 	border-radius: 10px;
 	border: 0.5px solid var(--main-color);
+	margin-bottom: 2rem;
 }
 
 .project_text-container {
-	width: 40%;
+	width: 30%;
 	padding: 20px;
 }
 
@@ -490,6 +491,14 @@ body {
 	margin-bottom: 10px;
 }
 
+.project_contents p a {
+	color: var(--main-color);
+}
+
+.project_contents p a:hover {
+	text-decoration: underline #fff;
+}
+
 .technologies_used {
 	list-style: none;
 	display: flex;
@@ -510,7 +519,7 @@ body {
 }
 
 .project_image-container {
-	width: 60%;
+	width: 70%;
 	overflow: hidden;
 	background-color: var(--main-color);
 	position: relative;
