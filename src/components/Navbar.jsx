@@ -47,7 +47,7 @@ const Navbar = () => {
 				<a href='#projects'>Projects</a>
 				<a href='#contact'>Contact</a>
 				<a
-					href='https://drive.google.com/file/d/1hlg-_-9VuBwzB4f3YtGkshuYfkRc0KqX/view?usp=sharing'
+					href='https://drive.google.com/file/d/1Y7Okl2WUSv5DmnZsntpBS6eeXX9zsiXR/view?usp=sharing'
 					className='resume_btn hidden'
 				>
 					Download Resume
@@ -55,7 +55,7 @@ const Navbar = () => {
 			</nav>
 
 			<a
-				href='https://drive.google.com/file/d/1hlg-_-9VuBwzB4f3YtGkshuYfkRc0KqX/view?usp=sharing'
+				href='https://drive.google.com/file/d/1Y7Okl2WUSv5DmnZsntpBS6eeXX9zsiXR/view?usp=sharing'
 				className='resume_btn'
 			>
 				Download Resume
